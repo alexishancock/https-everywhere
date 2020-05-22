@@ -14,9 +14,13 @@ in its entirety.
 	s: self-signed certificate
 	t: timeout on https
 -->
-<ruleset name="Example.com">
-	<target host="example.com" />
-	<target host="www.example.com" />
+<ruleset name="FINANZEN.NET">
+
+	<target host="finanzen.net" />
+	<target host="www.finanzen.net" />
+
+	<securecookie host=".+" name=".+" />
 
 	<rule from="^http:" to="https:" />
+
 </ruleset>
