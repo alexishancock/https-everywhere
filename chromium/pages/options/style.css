@@ -1,11 +1,10 @@
 body{
   display: grid;
-  font-family: var(--font);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*---------
-# LAYOUT
+# GRID LAYOUT
 ---------*/
 .header-wrapper {
   display: inline-flex;
@@ -106,9 +105,7 @@ img.remove{
 }
 
 .section-header-span{
-  font-size: 15px;
-  border: 0px;
-  border-radius: 13px;
+  cursor: pointer;
   padding: 8px;
   margin-left: 0 !important;
   margin-right: var(--space) !important;
@@ -224,8 +221,8 @@ div#update-channels-last-checked {
   font-size: 10px;
 }
 
-#update-channels-wrapper{
-  max-width: 500px;
+#update-channels-list {
+  display: inline-block;
 }
 
 @keyframes flash {
